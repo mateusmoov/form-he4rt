@@ -32,6 +32,7 @@ body {
 
 .main-text {
   font-size: 64px;
+  margin-left: 29px;
   font-family: Poppins;
   font-weight: 700;
   color: var(--main-font-color);
@@ -42,6 +43,14 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.title-register {
+  display: flex;
+}
+
+.back-button {
+  margin-top: 10px;
 }
 
 .container .form label {
@@ -64,8 +73,12 @@ body {
   display: flex;
 }
 
+.buttons {
+  display: flex;
+}
+
 .buttons button {
-  width: 253px;
+  width: 516px;
   height: 51px;
   background-color: var(--button-bg-color);
   border: none;
@@ -78,25 +91,28 @@ body {
   margin-right: 22px;
 }
 
-.buttons a {
-  padding: 8px 52px 6px 47px;
-  border: 2px solid var(--button-bg-color);
-  border-radius: 10px;
-  font-family: Poppins;
-  color: var(--main-font-color);
-  text-align: center;
-  font-size: 24px;
-  font-weight: 500;
-}
-
 .form p {
-  font-size: 22px;
+  font-size: 14px;
   color: var(--main-font-color);
   font-family: Poppins;
   font-weight: 300;
   margin-top: 61px;
   display: flex;
   justify-content: center;
+}
+
+.form input[type="checkbox"] {
+  width: 20px;
+}
+
+.termos {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.termos label {
+  font-size: 19px !important;
 }
 
 .form p a {
