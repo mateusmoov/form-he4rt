@@ -119,5 +119,8 @@ body {
 }
 
 .heart-text {
-  margin-top: 43px;
+  display: flex;
+  align-items: flex-end;
+  height: 100vh;
+  justify-content: center;
 }
