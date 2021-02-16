@@ -31,7 +31,7 @@ body {
 }
 
 .main-text {
-  font-size: 64px;
+  font-size: 48px;
   margin-left: 29px;
   font-family: Poppins;
   font-weight: 700;
@@ -54,7 +54,7 @@ body {
 }
 
 .container .form label {
-  font-size: 22px;
+  font-size: 18px;
   font-family: Poppins;
   font-weight: 300;
   color: var(--main-font-color);
@@ -85,20 +85,10 @@ body {
   text-decoration: none;
   cursor: pointer;
   border-radius: 10px;
-  font-size: 24px;
+  font-size: 18px;
   color: var(--main-font-color);
   font-weight: 500;
   margin-right: 22px;
-}
-
-.form p {
-  font-size: 14px;
-  color: var(--main-font-color);
-  font-family: Poppins;
-  font-weight: 300;
-  margin-top: 61px;
-  display: flex;
-  justify-content: center;
 }
 
 .form input[type="checkbox"] {
@@ -112,7 +102,7 @@ body {
 }
 
 .termos label {
-  font-size: 19px !important;
+  font-size: 18px !important;
 }
 
 .form p a {

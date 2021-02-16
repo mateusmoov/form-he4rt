@@ -19,33 +19,33 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
 }
 
 .container {
-  width: 34%;
+  width: 576px;
   background-color: var(--container-bg-color);
   border-radius: 13px;
+  position: relative;
   padding: 3em;
   box-shadow: 4px 10px 15px 1px rgba(0, 0, 0, 0.3);
 }
 
 .main-text {
-  font-size: 64px;
+  font-size: 48px;
   font-family: Poppins;
   font-weight: 700;
   color: var(--main-font-color);
-  margin-bottom: 107px;
 }
 
 .form {
+  margin-top: 107px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .container .form label {
-  font-size: 22px;
+  font-size: 18px;
   font-family: Poppins;
   font-weight: 300;
   color: var(--main-font-color);
@@ -57,9 +57,11 @@ body {
   margin-bottom: 30px;
   border-radius: 11px;
   width: 100%;
+  padding-left: 20px;
   height: 51px;
   border: none;
   font-size: 18px;
+  font-weight: 200;
   font-family: Poppins;
   display: flex;
 }
@@ -72,10 +74,14 @@ body {
   text-decoration: none;
   cursor: pointer;
   border-radius: 10px;
-  font-size: 24px;
+  font-size: 18px;
   color: var(--main-font-color);
   font-weight: 500;
   margin-right: 22px;
+}
+
+.title-register {
+  display: flex;
 }
 
 .password-container {
@@ -103,13 +109,14 @@ body {
 }
 
 .form p {
-  font-size: 22px;
+  font-size: 18px;
   color: var(--main-font-color);
   font-family: Poppins;
   font-weight: 300;
-  margin-top: 61px;
   display: flex;
+  margin-top: 61px;
   justify-content: center;
+  text-align: center;
 }
 
 .form p a {
@@ -121,6 +128,31 @@ body {
 .heart-text {
   display: flex;
   align-items: flex-end;
-  height: 100vh;
   justify-content: center;
+  position: relative;
+}
+
+.container-heart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box-container {
+  height: 68%;
+  width: 50%;
+  background-color: var(--main-font-color);
+  border-radius: 13px;
+  padding: 3em;
+  box-shadow: 4px 10px 15px 1px rgba(0, 0, 0, 0.3);
+}
+
+.box-heart > img {
+  position: fixed;
+}
+
+.box-heart img {
+  position: relative;
+  right: 322px;
 }

@@ -7,8 +7,22 @@
   z-index: 101;
   transform: translateX(400px);
   transition: 0.7s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .transition-1.is-active {
   transform: translateX(0px);
+}
+
+.transition-2 {
+  transform: translateX(0px);
+  transition: 0.7s ease-in-out;
+  opacity: 1;
+}
+
+.transition-2.is-active {
+  transform: translateX(400px);
+  opacity: 0;
 }

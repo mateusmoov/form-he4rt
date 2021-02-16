@@ -15,35 +15,53 @@
     <title>Formulário que eu não sei o que é</title>
   </head>
   <body>
+
+    
+    <div class="transition-heart transition-2 is-active">
+      <div class="container-heart">
+        <div class="box-container">
+          <div class="box-heart">
+            <img src="../assets/images/He4rt-Logo.svg" alt="logo" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-container">
     <div class="transition transition-1 is-active">
-      <div class="main-container">
         <div class="container">
           <h1 class="main-text">Login</h1>
           <div class="form">
             <label for="User">E-mail</label>
             <input
-              onclick="transitionContainer()"
+            onfocus="transitionContainer()"
               type="email"
               id="user"
               name="Name"
             />
             <label for="User">Senha</label>
             <div class="password-container">
-              <input type="password" id="User" name="Name" />
+              <input type="password" id="User" name="Name" onfocus="transitionHeart()" />
             </div>
             <div class="buttons">
               <button type="submit">Vamos lá</button>
             </div>
-            <p>
-              Não tem um cadastro? &nbsp;<a href="./register.html"
-                >Registre-se!</a
-              >
-            </p>
-            <p><a href="">Esqueci minha senha</a></p>
-          </div>
+            <div class="register-container">
+              <p>
+                Não tem um cadastro? &nbsp; <br> <a href="./register.html"
+                  >Registre-se!</a
+                >
+              </p>
+            </div>
+            <div class="forgot-password-container">
+              <p>
+                <a href="./register.html"
+                  >Esqueci minha senha</a
+                >
+              </p>
+            </div>
         </div>
       </div>
-    </div>
+      </div>
     <!-- <img
       class="heart-text"
       src="../assets/images/logo-heart-text.svg"
