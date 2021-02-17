@@ -1,5 +1,9 @@
 const transition_el = document.querySelector(".transition");
 const transition_heart = document.querySelector(".transition-heart");
+const transition_register = document.querySelector(".transition-form");
+const transition_heartStroke = document.querySelector(
+  ".transition-heartStroke"
+);
 
 function transitionContainer() {
   setTimeout(() => {
@@ -12,6 +16,19 @@ function transitionHeart() {
     transition_heart.classList.remove("is-active");
   }, 100);
 }
+
+function transitionRegister() {
+  setTimeout(() => {
+    transition_register.classList.remove("is-active");
+  }, 100);
+}
+
+function transitionHeartStroke() {
+  setTimeout(() => {
+    transition_heartStroke.classList.remove("is-active");
+  }, 100);
+}
+console.log(transition_heartStroke);
 
 window.onload = () => {
   const transition_page = document.querySelector(".transition-page");

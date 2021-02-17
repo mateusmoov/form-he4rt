@@ -17,38 +17,64 @@
   <body>
     <div class="transition-page transition-3 is-active"></div>
 
-    <div class="main-container">
-      <div class="container">
-        <div class="title-register">
-          <h1 class="main-text">Registre-se</h1>
-        </div>
-        <div class="form">
-          <label for="User">E-mail</label>
-          <input type="text" id="User" name="email" />
-          <label for="User">Sua Senha</label>
-          <input type="password" id="Password" name="senha" />
-          <label for="User">Confirme sua Senha</label>
-          <input type="password" id="Password" name="senha" />
-          <div class="termos">
-            <label for="vehicle1"
-              >Marcando isso, você concorda com os
-              <a href="">termos e serviços.</a></label
-            ><br />
-            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
-          </div>
-          <div class="buttons">
-            <button type="submit">Vamos lá</button>
-          </div>
-          <div class="container-login">
-            <a href="./index.html">Já tem uma conta? Logue-se</a>
+    <div class="transition-heartStroke transition-5 is-active">
+      <div class="container-heart">
+        <div class="box-container">
+          <div class="box-heart">
+            <img
+              src="../assets/images/He4rt-Logo-stroke.svg"
+              alt="logo"
+              width="600"
+            />
           </div>
         </div>
       </div>
-      <img
-        class="heart-text"
-        src="../assets/images/logo-heart-text.svg"
-        alt="logo"
-      />
+    </div>
+    <div class="transition-form transition-4 is-active">
+      <div class="main-container">
+        <div class="container">
+          <div class="title-register">
+            <h1 class="main-text">Registre-se</h1>
+          </div>
+          <div class="form">
+            <label for="User">E-mail</label>
+            <input
+              type="text"
+              id="User"
+              name="email"
+              onfocus="transitionRegister()"
+              autocomplete="off"
+            />
+            <label for="User">Sua Senha</label>
+            <input type="password" id="Password" name="senha" />
+            <label for="User">Confirme sua Senha</label>
+            <input
+              type="password"
+              id="confirmpassword"
+              name="confirmpassword"
+              onfocus="transitionHeartStroke()"
+            />
+            <div class="termos">
+              <label for="vehicle1"
+                >Marcando isso, você concorda com os
+                <a href="./termos.html">termos e serviços.</a></label
+              ><br />
+              <input
+                type="checkbox"
+                id="vehicle1"
+                name="vehicle1"
+                value="Bike"
+              />
+            </div>
+            <div class="buttons">
+              <button type="submit">Vamos lá</button>
+            </div>
+            <div class="container-login">
+              <a href="./index.html">Já tem uma conta? Logue-se</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
   <script src="index.js"></script>

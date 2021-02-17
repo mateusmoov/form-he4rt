@@ -64,6 +64,7 @@ body {
 
 .container .form input {
   margin-bottom: 30px;
+  padding-left: 20px;
   border-radius: 11px;
   width: 516px;
   height: 51px;
@@ -122,4 +123,22 @@ body {
 
 .heart-text {
   margin-top: 43px;
+}
+
+.container-heart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+  width: 50%;
+  background-color: var(--main-font-color);
+  border-radius: 13px;
+  box-shadow: 4px 10px 15px 1px rgba(0, 0, 0, 0.3);
 }
