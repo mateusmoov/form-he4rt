@@ -140,19 +140,23 @@ body {
 }
 
 .box-container {
-  height: 68%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 73%;
   width: 50%;
   background-color: var(--main-font-color);
   border-radius: 13px;
-  padding: 3em;
   box-shadow: 4px 10px 15px 1px rgba(0, 0, 0, 0.3);
 }
-
-.box-heart > img {
-  position: fixed;
-}
-
-.box-heart img {
-  position: relative;
-  right: 322px;
+.comiocu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 100vh;
+  font-weight: bold;
+  font-size: 40px;
+  font-family: Poppins;
+  transition: 0.5s ease-out;
 }

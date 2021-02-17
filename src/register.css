@@ -105,6 +105,15 @@ body {
   font-size: 18px !important;
 }
 
+.container-login > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-top: 20px;
+  font-family: Poppins;
+}
+
 .form p a {
   color: var(--main-font-color);
   font-family: Poppins;

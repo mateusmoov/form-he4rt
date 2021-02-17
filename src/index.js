@@ -12,3 +12,25 @@ function transitionHeart() {
     transition_heart.classList.remove("is-active");
   }, 100);
 }
+
+window.onload = () => {
+  const transition_page = document.querySelector(".transition-page");
+  const anchors = document.querySelectorAll("a");
+
+  setTimeout(() => {
+    transition_page.classList.remove("is-active");
+  }, 500);
+
+  anchors.forEach((anchor) =>
+    anchor.addEventListener("click", (e) => {
+      e.preventDefault();
+      let target = e.target.href;
+      console.log(target);
+      transition_page.classList.add("is-active");
+
+      setTimeout(() => {
+        window.location.href = target;
+      }, 500);
+    })
+  );
+};
