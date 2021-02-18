@@ -12,6 +12,7 @@
 
 body {
   background-color: var(--main-bg-color);
+  overflow-x: hidden;
 }
 
 .main-container {
@@ -27,7 +28,7 @@ body {
   border-radius: 13px;
   position: relative;
   padding: 3em;
-  box-shadow: 4px 10px 15px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: -2px 0px 15px 1px rgba(0, 0, 0, 0.3);
 }
 
 .main-text {
@@ -143,7 +144,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 65%;
+  height: 59%;
   width: 50%;
   background-color: var(--main-font-color);
   border-radius: 13px;

@@ -24,7 +24,6 @@
 
 .transition-2.is-active {
   transform: translateX(500px);
-  /* display none? */
   opacity: 0;
 }
 

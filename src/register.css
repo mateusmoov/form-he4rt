@@ -12,6 +12,7 @@
 
 body {
   background-color: var(--main-bg-color);
+  overflow-x: hidden;
 }
 
 .main-container {
@@ -23,7 +24,6 @@ body {
 }
 
 .container {
-  width: 34%;
   background-color: var(--container-bg-color);
   border-radius: 13px;
   padding: 3em;
@@ -100,6 +100,7 @@ body {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
+  width: 468px;
 }
 
 .termos label {
@@ -136,7 +137,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80%;
+  height: 73%;
   width: 50%;
   background-color: var(--main-font-color);
   border-radius: 13px;
