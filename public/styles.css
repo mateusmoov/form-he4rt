@@ -24,6 +24,7 @@ body {
 
 .container {
   width: 576px;
+  height: 70%;
   background-color: var(--container-bg-color);
   border-radius: 13px;
   position: relative;
@@ -144,7 +145,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 59%;
+  height: 70%;
   width: 50%;
   background-color: var(--main-font-color);
   border-radius: 13px;

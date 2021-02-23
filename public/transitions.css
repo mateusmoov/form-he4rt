@@ -17,7 +17,7 @@
 }
 
 .transition-2 {
-  transform: translateX(-300px);
+  transform: translateX(-350px);
   transition: 0.7s ease-in-out;
   opacity: 1;
 }
