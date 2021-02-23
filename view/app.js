@@ -10,6 +10,7 @@ app.use(
   })
 );
 
+// Mongoose configuration
 mongoose
   .connect(
     "mongodb+srv://moov:batata123@form-heart.og2bq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
@@ -30,12 +31,17 @@ const registerForm = {
 
 const Note = mongoose.model("Note", registerForm);
 
+// First page to render
 app.get("/", (req, res) =>
   res.sendFile(path.resolve(__dirname, "..", "public", "register.html"))
 );
 
+// Request CSS and Images files
 app.use(express.static(path.join(__dirname, "..", "/public")));
 
+app.use(express.static);
+
+// Take the data from the page and send it to the database.
 app.post("/", (req, res) => {
   let newNote = new Note({
     email: req.body.useremail,
@@ -45,6 +51,7 @@ app.post("/", (req, res) => {
   res.redirect("/");
 });
 
+// Open server
 app.listen(3000, () => {
   console.log("Tudo certo meu chefe");
 });
