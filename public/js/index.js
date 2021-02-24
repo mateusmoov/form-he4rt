@@ -28,7 +28,6 @@ function transitionHeartStroke() {
     transition_heartStroke.classList.remove("is-active");
   }, 100);
 }
-console.log(transition_heartStroke);
 
 window.onload = () => {
   const transition_page = document.querySelector(".transition-page");
