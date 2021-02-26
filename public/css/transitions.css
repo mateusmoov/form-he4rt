@@ -4,7 +4,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 101;
   transform: translateX(400px);
   transition: 0.7s ease-in-out;
   display: flex;
@@ -33,7 +32,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 103;
   background-color: #32353b;
   opacity: 0;
   pointer-events: none;
@@ -52,7 +50,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 101;
   transform: translateX(-400px);
   transition: 0.7s ease-in-out;
   position: fixed;
@@ -70,6 +67,58 @@
 
 .transition-5.is-active {
   transform: translateX(-500px);
-  /* display none? */
   opacity: 0;
+}
+
+/* Modal transitions */
+.transition-6.is-active {
+  opacity: 0;
+  display: none;
+}
+
+.transition-6 {
+  transition: 0.5s ease-out;
+  opacity: 1;
+  width: 100vw;
+  position: absolute;
+  z-index: 200;
+}
+
+.transition-7.is-active {
+  opacity: 0;
+  display: none;
+}
+
+.transition-7 {
+  transition: 0.5s ease-out;
+  opacity: 1;
+  width: 100vw;
+  position: absolute;
+  z-index: 200;
+}
+
+.transition-8.is-active {
+  opacity: 0;
+  display: none;
+}
+
+.transition-8 {
+  transition: 0.5s ease-out;
+  opacity: 1;
+  width: 100vw;
+  position: absolute;
+  z-index: 200;
+}
+
+.transition-9.is-active {
+  opacity: 0;
+  display: none;
+}
+
+.transition-9 {
+  transition: 0.5s ease-out;
+  opacity: 1;
+  width: 100vw;
+  position: absolute;
+  z-index: 200;
 }

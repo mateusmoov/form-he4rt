@@ -1,4 +1,23 @@
 const buttonSubmit = document.getElementById("buttonSubmit");
+const modalLogin = document.querySelector(".modal-login");
+const button_modal = document.getElementById("buttonmodal");
+const transition_modalemail = document.querySelector(".modal-error-email");
+const transition_modalpassword1 = document.querySelector(
+  ".modal-error-password1"
+);
+const transition_modalpassword2 = document.querySelector(
+  ".modal-error-password2"
+);
+
+function transitionModalLogin() {
+  setTimeout(() => {
+    modalLogin.classList.remove("is-active");
+  }, 100);
+}
+
+function closeButtonModal() {
+  window.hide();
+}
 
 buttonSubmit.addEventListener("click", (e) => {
   const userLogin = document.getElementById("user").value;
@@ -14,10 +33,9 @@ buttonSubmit.addEventListener("click", (e) => {
   const resultado = userInfoObject.filter(checkLogin).filter(checkPasswork);
 
   if (typeof resultado !== "undefined" && resultado.length > 0) {
-    console.log("deu bom");
+    window.location.href =
+      "http://127.0.0.1:5500/public/html/login-success.html";
   } else {
-    console.log("deu ruim");
+    transitionModalLogin();
   }
-
-  console.log(resultado);
 });

@@ -22,7 +22,7 @@
   border-top-left-radius: 15px;
 }
 
-.top-modal {
+.container-top-modal {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,12 +63,11 @@
   color: black;
 }
 
-.container-button > button {
-  position: absolute;
-  left: 1225px;
-  top: 280px;
+.container-button {
+  display: flex;
+  justify-content: flex-end;
 }
 
-.container-zindex {
-  z-index: 9999999;
+.container-button > button {
+  cursor: pointer;
 }

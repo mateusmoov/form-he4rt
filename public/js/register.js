@@ -1,4 +1,29 @@
+const transition_modalemail = document.querySelector(".modal-error-email");
+const transition_modalpassword1 = document.querySelector(
+  ".modal-error-password1"
+);
+const transition_modalpassword2 = document.querySelector(
+  ".modal-error-password2"
+);
 const buttonSubmit = document.getElementById("buttonSubmit");
+
+function transitionModalEmail() {
+  setTimeout(() => {
+    transition_modalemail.classList.remove("is-active");
+  }, 100);
+}
+
+function transitionModalPassword1() {
+  setTimeout(() => {
+    transition_modalpassword1.classList.remove("is-active");
+  }, 100);
+}
+
+function transitionModalPassword2() {
+  setTimeout(() => {
+    transition_modalpassword2.classList.remove("is-active");
+  }, 100);
+}
 
 let usuarios = [];
 
@@ -18,9 +43,9 @@ buttonSubmit.addEventListener("click", (e) => {
       localStorage.setItem("user", JSON.stringify(usuarios));
       console.log("tudo certo");
     } else {
-      console.log("A senha precisa ser no mínimo de 8 caracteres");
+      transitionModalPassword2();
     }
   } else {
-    return console.log("As senhas nao coincidem.");
+    transitionModalPassword1();
   }
 });

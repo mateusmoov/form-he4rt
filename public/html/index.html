@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="../css/transitions.css" />
     <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/modal.css" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -16,6 +17,29 @@
     <title>Login</title>
   </head>
   <body>
+    <div class="modal-login transition-9 is-active">
+      <div class="modal-container">
+        <div class="top-modal">
+          <div class="container-button">
+            <button onclick="closeButtonModal()">
+              <img src="../../assets/images/closebutton-icon.svg" alt="close" />
+            </button>
+          </div>
+          <div class="container-top-modal">
+            <div class="container-key">
+              <img src="../../assets/images/error-login.svg" alt="password" />
+            </div>
+          </div>
+        </div>
+        <div class="modal">
+          <div class="container-text">
+            <h1>Opa!</h1>
+            <p>Email ou senha incorretos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="transition-page transition-3 is-active"></div>
 
     <div class="transition-heart transition-2 is-active">

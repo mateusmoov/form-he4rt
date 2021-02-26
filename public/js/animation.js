@@ -5,6 +5,7 @@ const transition_heartStroke = document.querySelector(
   ".transition-heartStroke"
 );
 
+// Transition Login
 function transitionContainer() {
   setTimeout(() => {
     transition_el.classList.remove("is-active");
@@ -29,6 +30,7 @@ function transitionHeartStroke() {
   }, 100);
 }
 
+// Transition page
 window.onload = () => {
   const transition_page = document.querySelector(".transition-page");
   const anchors = document.querySelectorAll("a");
