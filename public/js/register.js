@@ -41,7 +41,7 @@ buttonSubmit.addEventListener("click", (e) => {
         password: passwordRegister,
       });
       localStorage.setItem("user", JSON.stringify(usuarios));
-      console.log("tudo certo");
+      window.location.href = "http://127.0.0.1:5500/public/html/register.html";
     } else {
       transitionModalPassword2();
     }
