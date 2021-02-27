@@ -27,8 +27,7 @@ buttonSubmit.addEventListener("click", (e) => {
   const resultado = userInfoObject.filter(checkLogin).filter(checkPasswork);
 
   if (typeof resultado !== "undefined" && resultado.length > 0) {
-    window.location.href =
-      "http://127.0.0.1:5500/public/html/login-success.html";
+    window.location.href = "../html/login-sucess.html";
   } else {
     transitionModalLogin();
   }

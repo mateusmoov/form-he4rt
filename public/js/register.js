@@ -47,7 +47,7 @@ buttonSubmit.addEventListener("click", (e) => {
         password: passwordRegister,
       });
       localStorage.setItem("user", JSON.stringify(usuarios));
-      window.location.href = "../html/login-sucess.html";
+      window.location.href = "../html/login.html";
     } else {
       transitionModalPassword2();
     }
