@@ -25,6 +25,12 @@ function transitionModalPassword2() {
   }, 100);
 }
 
+function closeModal(modalname) {
+  setTimeout(() => {
+    modalname.classList.add("is-active");
+  }, 100);
+}
+
 let usuarios = [];
 
 buttonSubmit.addEventListener("click", (e) => {
@@ -41,7 +47,7 @@ buttonSubmit.addEventListener("click", (e) => {
         password: passwordRegister,
       });
       localStorage.setItem("user", JSON.stringify(usuarios));
-      window.location.href = "http://127.0.0.1:5500/public/html/register.html";
+      window.location.href = "../html/login-sucess.html";
     } else {
       transitionModalPassword2();
     }

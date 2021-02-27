@@ -27,7 +27,7 @@
 }
 
 .transition-3 {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -36,6 +36,7 @@
   opacity: 0;
   pointer-events: none;
   transition: 0.5s ease-out;
+  z-index: 999999;
 }
 
 .transition-3.is-active {

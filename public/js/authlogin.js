@@ -1,13 +1,5 @@
 const buttonSubmit = document.getElementById("buttonSubmit");
 const modalLogin = document.querySelector(".modal-login");
-const button_modal = document.getElementById("buttonmodal");
-const transition_modalemail = document.querySelector(".modal-error-email");
-const transition_modalpassword1 = document.querySelector(
-  ".modal-error-password1"
-);
-const transition_modalpassword2 = document.querySelector(
-  ".modal-error-password2"
-);
 
 function transitionModalLogin() {
   setTimeout(() => {
@@ -15,8 +7,10 @@ function transitionModalLogin() {
   }, 100);
 }
 
-function closeButtonModal() {
-  window.hide();
+function closeModalLogin() {
+  setTimeout(() => {
+    modalLogin.classList.add("is-active");
+  }, 100);
 }
 
 buttonSubmit.addEventListener("click", (e) => {
