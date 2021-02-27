@@ -47,7 +47,8 @@ buttonSubmit.addEventListener("click", (e) => {
         password: passwordRegister,
       });
       localStorage.setItem("user", JSON.stringify(usuarios));
-      window.location.href = "../html/login.html";
+      window.location.href =
+        "https://mateusmoov.github.io/form-he4rt/public/html/index.html";
     } else {
       transitionModalPassword2();
     }

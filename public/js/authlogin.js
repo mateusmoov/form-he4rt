@@ -27,7 +27,8 @@ buttonSubmit.addEventListener("click", (e) => {
   const resultado = userInfoObject.filter(checkLogin).filter(checkPasswork);
 
   if (typeof resultado !== "undefined" && resultado.length > 0) {
-    window.location.href = "../html/login-sucess.html";
+    window.location.href =
+      "https://mateusmoov.github.io/form-he4rt/public/html/login-success.html";
   } else {
     transitionModalLogin();
   }
