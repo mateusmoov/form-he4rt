@@ -40,7 +40,10 @@ function closeModal(modalname) {
 
 let usuarios = [];
 
-buttonSubmit.addEventListener("click", () => {
+const formSubmit = document.querySelector(".form");
+formSubmit.addEventListener("submit", (event) => {
+  event.preventDefault();
+
   const userRegister = document.getElementById("User").value;
   const passwordRegister = document.getElementById("Password").value;
   const confirmpasswordRegister = document.getElementById("confirmpassword")
