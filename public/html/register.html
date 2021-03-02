@@ -16,6 +16,31 @@
     <title>Register</title>
   </head>
   <body>
+    <!-- MODAL INPUT EMPTY -->
+
+    <div class="modal-empty transition-10 is-active">
+      <div class="modal-container">
+        <div class="top-modal">
+          <div class="container-button">
+            <button onclick="closeModal(transition_modalempty)">
+              <img src="../../assets/images/closebutton-icon.svg" alt="close" />
+            </button>
+          </div>
+          <div class="container-top-modal">
+            <div class="container-key">
+              <img src="../../assets/images/peepoShrug.png" alt="password" />
+            </div>
+          </div>
+        </div>
+        <div class="modal">
+          <div class="container-text">
+            <h1>Opa!</h1>
+            <p>Você não digitou nada.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- MODAL EMAIL -->
     <div class="modal-error-email transition-6 is-active">
       <div class="modal-container">
@@ -27,7 +52,7 @@
           </div>
           <div class="container-top-modal">
             <div class="container-key">
-              <img src="../../assets/images/email-icon.svg" alt="password" />
+              <img src="../../assets/images/email-icon.svg" alt="email" />
             </div>
           </div>
         </div>
@@ -135,10 +160,11 @@
                 id="vehicle1"
                 name="vehicle1"
                 value="Bike"
+                required
               />
             </div>
             <div class="buttons">
-              <button id="buttonSubmit">Vamos lá</button>
+              <button id="buttonSubmit" type="submit">Vamos lá</button>
             </div>
             <div class="container-login">
               <a href="./index.html">Já tem uma conta? Logue-se</a>

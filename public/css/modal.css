@@ -1,5 +1,6 @@
 .background-container {
   background-color: black;
+  animation: opacityModal 0.5s ease-out;
   height: 100vh;
   opacity: 60%;
   z-index: 1;
@@ -70,4 +71,13 @@
 
 .container-button > button {
   cursor: pointer;
+}
+
+@keyframes opacityModal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

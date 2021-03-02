@@ -90,6 +90,7 @@ body {
   color: var(--main-font-color);
   font-weight: 500;
   margin-right: 22px;
+  align-items: center;
 }
 
 .form input[type="checkbox"] {

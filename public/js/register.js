@@ -5,6 +5,7 @@ const transition_modalpassword1 = document.querySelector(
 const transition_modalpassword2 = document.querySelector(
   ".modal-error-password2"
 );
+const transition_modalempty = document.querySelector(".modal-empty");
 const buttonSubmit = document.getElementById("buttonSubmit");
 
 function transitionModalEmail() {
@@ -25,6 +26,12 @@ function transitionModalPassword2() {
   }, 100);
 }
 
+function transitionModalEmpty() {
+  setTimeout(() => {
+    transition_modalempty.classList.remove("is-active");
+  }, 100);
+}
+
 function closeModal(modalname) {
   setTimeout(() => {
     modalname.classList.add("is-active");
@@ -33,12 +40,11 @@ function closeModal(modalname) {
 
 let usuarios = [];
 
-buttonSubmit.addEventListener("click", (e) => {
+buttonSubmit.addEventListener("click", () => {
   const userRegister = document.getElementById("User").value;
   const passwordRegister = document.getElementById("Password").value;
   const confirmpasswordRegister = document.getElementById("confirmpassword")
     .value;
-  e.preventDefault();
 
   function validateEmail(email) {
     const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -46,25 +52,33 @@ buttonSubmit.addEventListener("click", (e) => {
   }
 
   // Confirm if the email is valid.
-  if (validateEmail(userRegister)) {
-    if (passwordRegister === confirmpasswordRegister) {
-      // Confirm if the password matches.
-      if (passwordRegister.length >= 8) {
-        // Check if the password length is grater than or equal to 8.
-        usuarios.push({
-          email: userRegister,
-          password: passwordRegister,
-        });
-        localStorage.setItem("user", JSON.stringify(usuarios));
-        window.location.href =
-          "https://mateusmoov.github.io/form-he4rt/public/html/index.html";
+  if (
+    userRegister !== "" ||
+    passwordRegister !== "" ||
+    confirmpasswordRegister !== ""
+  ) {
+    if (validateEmail(userRegister)) {
+      if (passwordRegister === confirmpasswordRegister) {
+        // Confirm if the password matches.
+        if (passwordRegister.length >= 8) {
+          // Check if the password length is grater than or equal to 8.
+          usuarios.push({
+            email: userRegister,
+            password: passwordRegister,
+          });
+          localStorage.setItem("user", JSON.stringify(usuarios));
+          window.location.href =
+            "https://mateusmoov.github.io/form-he4rt/public/html/index.html";
+        } else {
+          transitionModalPassword2();
+        }
       } else {
-        transitionModalPassword2();
+        transitionModalPassword1();
       }
     } else {
-      transitionModalPassword1();
+      transitionModalEmail();
     }
   } else {
-    transitionModalEmail(); 
+    transitionModalEmpty();
   }
 });

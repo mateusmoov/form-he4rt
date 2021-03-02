@@ -123,3 +123,16 @@
   position: absolute;
   z-index: 200;
 }
+
+.transition-10.is-active {
+  opacity: 0;
+  display: none;
+}
+
+.transition-10 {
+  transition: 0.5s ease-out;
+  opacity: 1;
+  width: 100vw;
+  position: absolute;
+  z-index: 200;
+}
