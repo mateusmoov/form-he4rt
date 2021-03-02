@@ -40,19 +40,31 @@ buttonSubmit.addEventListener("click", (e) => {
     .value;
   e.preventDefault();
 
-  if (passwordRegister === confirmpasswordRegister) {
-    if (passwordRegister.length > 8) {
-      usuarios.push({
-        email: userRegister,
-        password: passwordRegister,
-      });
-      localStorage.setItem("user", JSON.stringify(usuarios));
-      window.location.href =
-        "https://mateusmoov.github.io/form-he4rt/public/html/index.html";
+  function validateEmail(email) {
+    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+  }
+
+  // Confirm if the email is valid.
+  if (validateEmail(userRegister)) {
+    if (passwordRegister === confirmpasswordRegister) {
+      // Confirm if the password matches.
+      if (passwordRegister.length >= 8) {
+        // Check if the password length is grater than or equal to 8.
+        usuarios.push({
+          email: userRegister,
+          password: passwordRegister,
+        });
+        localStorage.setItem("user", JSON.stringify(usuarios));
+        window.location.href =
+          "https://mateusmoov.github.io/form-he4rt/public/html/index.html";
+      } else {
+        transitionModalPassword2();
+      }
     } else {
-      transitionModalPassword2();
+      transitionModalPassword1();
     }
   } else {
-    transitionModalPassword1();
+    transitionModalEmail(); 
   }
 });
